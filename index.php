@@ -1,3 +1,3 @@
 <?php
 
-header('location:view/homeView.html');
+header('location:https://21hmzz.github.io/view/homeView.html');
