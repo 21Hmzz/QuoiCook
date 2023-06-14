@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
+
+body {
+    font-family: 'Kadwa', serif;
+}
+
+.containerPage {
+    padding: 30px;
+}
+
+.containerViewRecipe {
+    background-color: rgba(255, 255, 255, 0.650);
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.videoSpace {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+    background-color: rgba(131, 163, 165, 0.349);
+    display: flex;
+    align-items: center;
+}
+#nocam {
+    font-size: 5em;
+    color: rgba(31, 54, 59, 0.267);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.recipeSteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    padding: 40px;
+    width: 50%;
+}
+
+
+.titleStepSigns {
+ position: absolute;
+ right: 40px;
+ width: 480px;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(131, 163, 165, 0.349);
+    border-radius: 6px;
+
+}
+
+.titleStep {
+    font-size: 2.5em;
+    background-color: rgba(131, 163, 165, 0.349);
+    padding: 10px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.subTitleStep {
+    
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#step {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3.5em;
+    color: #5D97D1;
+}
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.parameterBtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(131, 163, 165, 0.349);
+    right: 40px;
+    bottom: 390px;
+    width: 480px;
+    border-radius: 6px;
+}
+
+.btnParameters {
+    border-radius: 50%;
+    background-color: #5D97D1;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #5D97D1;
+
+}
+.btnParameters i{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+#retour{
+   padding: 10px;
+   border-radius: 6px;
+   margin-bottom: 20px;
+   position: absolute;
+   top: 20px;
+    left: 20px;
+    background-color: #5D97D1;
+    display: flex;
+}
+#retour ul {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+#retour ul li {
+    list-style:none;
+    height:10px;
+    width:10px;
+    background:#ffdd;
+    margin: 0px;
+    border-radius:50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: start-animation 1.5s  linear infinite;
+  }
+  #retour li:nth-child(1){
+    animation-delay:0
+  }
+  #retour li:nth-child(2){
+    animation-delay:.25s
+  }
+  #retour  li:nth-child(3){
+    animation-delay:.5s
+  }
+  #retour li:nth-child(4){
+    animation-delay:.75s
+  }
+  @keyframes start-animation {
+    0%{
+      transform: translateY(0)
+    }
+    50%{
+      transform: translateY(0)
+    }
+    75%{
+      transform: translateY(-10px)
+    }
+    100%{
+      transform: translate(0px)
+    }
+  }
+
+  #retourText{
+        color: #fff;
+        font-size: 1.2em;
+  }
+  
+
+#nocam {
+    color:rgba(31, 54, 59, 0.267);
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loadingBar{
+    width: 100%;
+    height: 20px;
+    background-color: #5D97D1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.loadingBar .bar {
+
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+}

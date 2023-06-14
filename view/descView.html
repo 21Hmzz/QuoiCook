@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/descStyle.css" />
+  <link rel="stylesheet" href="../css/generalStyle.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body id="generalContainer">
+  <div class="logoTitle"><a href="homeView.html">QuoiCookBae</a></div>
+  <div id="container">
+    <div id="titleRecipeContainer">Recette de ramens teh les fous</div>
+    <div id="imageAndDescContainer">
+      <div id="containerLeft">
+        <img src="../assets/images/ramen.jpg" alt="Ramens" width="auto" height="200px" />
+      </div>
+      <div id="containerRight">
+        <div id="descContainer">
+        
+        </div>
+        <div id="btnsContainer">
+          <div id="btnsSubContainer">
+            <div id="btnsSubSubContainer">
+              <div>
+                <span>Mode mains-libres</span>
+              </div>
+              <div id="btnsPanel">
+                <div class="btnplay">
+                  <span class="material-symbols-outlined"> volume_up </span>
+                  Audio
+                </div>
+                <div class="btnplay">
+                  <span class="material-symbols-outlined"> videocam </span>
+                  Vidéo
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="btnPlay" class="btnAudioVideo">
+                <span id="iconPlay" class="material-symbols-outlined">
+                  play_arrow
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="infosContainer">
+      <!-- Ingredients -->
+      <div class="infosSubContainer">
+        <span style="font-size: 1.3em; font-weight: bold; padding-bottom: 10px">Ingrédients</span>
+        <span>-Nouilles</span>
+        <span>-Oeuf</span>
+        <span>-Boeuf</span>
+        <span>-Sauce</span>
+      </div>
+      <!-- Ustensiles -->
+      <div class="infosSubContainer">
+        <span style="font-size: 1.3em; font-weight: bold; padding-bottom: 10px">Ustensiles</span>
+        <span>-1 bol</span>
+        <span>-1 couteau</span>
+      </div>
+      <!-- Temps -->
+      <div class="infosSubContainer">
+        <span style="font-size: 1.3em; font-weight: bold; padding-bottom: 10px">Temps</span>
+        <span>Temps de préparation : 10min</span>
+        <span>Temps de cuisson : 10min</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  let description = document.getElementById('descContainer');
+  let titre = document.getElementById('titleRecipeContainer');
+  let listeUstensiles = document.getElementById('titleRecipeContainer');
+  let listeIngredients = document.getElementById('titleRecipeContainer');
+  let temps = document.getElementById('titleRecipeContainer');
+  let btnPlay = document.getElementById('btnPlay')
+  //PASSER AU LIEN
+
+  function $_GET(param) {
+    var vars = {};
+    window.location.href.replace(location.hash, "").replace(
+      /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+      function (m, key, value) {
+        // callback
+        vars[key] = value !== undefined ? value : "";
+      }
+    );
+
+    if (param) {
+      return vars[param] ? vars[param] : null;
+    }
+    return vars;
+  }
+
+  console.log($_GET("id"));
+
+  function chargerRecette() {
+    const xhr = new XMLHttpRequest();
+    const url = "../assets/js/recette.json";
+    xhr.open("GET", url, true);
+    xhr.addEventListener("load", function () {
+      data = JSON.parse(xhr.responseText);
+      console.log(data[$_GET("id")]);
+      description.innerHTML = data[$_GET("id")].description;
+      titre.innerHTML = data[$_GET("id")].name;
+
+      btnPlay.addEventListener('click',function(){
+        window.location = "recipeView.html?mode=all&id="+ $_GET("id") ;
+      })
+    
+      // chargerDonnees();
+    });
+    xhr.send(null);
+    console.log("Chargement effectué");
+  }
+  chargerRecette();
+
+
+
+</script>

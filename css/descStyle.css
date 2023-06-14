@@ -1,0 +1,143 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+#generalContainer{
+    display: flex;
+    padding: 7% 5% 5% 5%;
+}
+
+#container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.650);
+    border-radius: 5px;
+}
+
+#titleRecipeContainer{
+    padding: 3% 5% 3% 5%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#imageAndDescContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+#containerLeft{
+    padding-left: 5%;
+}
+
+#containerRight{
+    padding-right: 5%;
+    width: 62%;
+}
+
+#descContainer{
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 30px;
+}
+
+#btnsContainer{
+    display: flex;
+    padding: 30px;
+width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#btnsSubSubContainer{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+#btnsSubContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnsPanel{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.btnAudioVideo{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    background-color: #5D97D1;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+#btnPlay{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.btnplay{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    background-color: #A8E1DF;
+    margin-right: 10px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+.btnplay a:visited{
+    color: white !important;
+}
+
+#iconPlay{
+    font-size: 3em
+}
+
+#infosContainer{
+    /* padding: 3% 5% 3% 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.infosSubContainer{
+    background-color: white;
+    width: 300px;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}

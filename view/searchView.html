@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Search</title>
+  <link rel="stylesheet" href="../css/searchStyle.css" />
+  <link rel="stylesheet" href="../css/generalStyle.css" />
+</head>
+
+<body>
+  <div class="logoTitle"><a href="homeView.html">QuoiCookBae</a></div>
+  <div class="containerPage">
+
+
+    <div class="containerResults">
+      <div class="containerResultsSub">
+        <h3>Résultats de recherche pour : <strong>Ramens faciles</strong></h3>
+        <div class="containerSearch">
+          <div>Ramens faciles</div>
+          <span class="material-symbols-rounded iconSearch"> search </span>
+        </div>
+      </div>
+
+      <!-- List ITEMs -->
+      <div id="listeItemsSearched">
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  var elementListItemSearched = document.getElementById('listeItemsSearched');
+  var data = "";
+  function chargerRecette() {
+    const xhr = new XMLHttpRequest();
+    const url = "../assets/js/recette.json";
+    xhr.open("GET", url, true);
+    xhr.addEventListener("load", function () {
+      data = JSON.parse(xhr.responseText);
+      console.log(data);
+      chargerDonnees();
+    });
+    xhr.send(null);
+    console.log("Chargement effectué");
+  }
+
+
+  window.addEventListener("load", chargerRecette);
+
+  function chargerDonnees() {
+    Object.values(data).map((i) => {
+
+      const subDiv = document.createElement("div");
+      var title = i.name;
+      var time = i.Temps.total;
+      var imgSrc = `../assets/images/recettes/${i.srcImg}.jpg`;
+
+      var item = `
+        <div class="containerItem">
+          <span class="material-symbols-rounded iconHeart"> favorite </span>
+          <img class="imgRecette" src="${imgSrc}" />
+          <div class="descCont">
+            <div class="titleDiv">
+              <div>${title}</div>
+              <div>
+                <span class="material-symbols-rounded iconVideo">
+                  videocam
+                </span>
+                <span class="material-symbols-rounded iconSpeaker">
+                  volume_up
+                </span>
+              </div>
+            </div>
+            <div class="containerContent">
+              <div>
+                <div class="timerDiv">
+                  <span class="material-symbols-rounded iconTimer">
+                    av_timer
+                  </span>
+                  <div>${time}</div>
+                </div>
+                <div class="gradeDiv">
+                  <span class="material-symbols-rounded iconStar">
+                    grade
+                  </span>
+                  <span class="material-symbols-rounded iconStar">
+                    grade
+                  </span>
+                  <span class="material-symbols-rounded iconStar">
+                    grade
+                  </span>
+                  <span class="material-symbols-rounded iconStar">
+                    grade
+                  </span>
+                  <span class="material-symbols-rounded iconStar">
+                    grade
+                  </span>
+                </div>
+              </div>
+              <a href="./descView.html?id=${i.id}" class="linkToDesc">
+                <span class="material-symbols-rounded iconPlay">
+                  play_circle
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+    `
+
+      subDiv.innerHTML = item;
+      console.log(elementListItemSearched);
+      elementListItemSearched.appendChild(subDiv);
+    })
+  }
+
+
+</script>
+

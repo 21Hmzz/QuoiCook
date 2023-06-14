@@ -1,0 +1,99 @@
+{
+    "1":{
+        "id":"1",
+        "name" : "Ramens façon Naruto",
+        "description" : "Le ramen est à la base un plat de nouilles, accompagnées par une soupe qui donne le goût à celles-ci. C’est un élément incontournable de la gastronomie japonaise, qui a la particularité de se renouveler sans cesse depuis quelques décennies.",
+        "listeIngredients" : ["200g ramen","1 c. à soupe pâte miso","2 c à soupe de Vert d'oignon frais","1 oeuf mollet mariné","50g pousses de bambou","2 tranches de Narutomaki","3 tranches porc Chashu","1 c. à café d'huile de sésame","1 cube de bouillon de porc","1 feuille d'Algue nori"],
+        "listeUstensiles" : ["casserole","grand bol","bol","cuillère","couteu"],
+       "etapes" : {"1":"Faire cuire les nouilles comme indiqué sur l'emballage et réserver dans un bol",
+                    "2":"En parallèle, faire bouillir 600g d'eau et y faire fondre le bouillon",
+                    "3":"Délayer la pâte miso avec un peu de bouillon chaud",
+                    "4":"Ajouter la pâte miso au bouillon",
+                    "5":"Reprendre les nouilles réservées dans un grand bol",
+                    "6":"Ajouter la feuille d’algue nori coupée en 3",
+                    "7":"Ajouter les tranches de porc chashu",
+                    "8":"Ajouter les pousses de bambou",
+                    "9":"Ajouter l’oeuf coupé en 2",
+                    "10":"Ajouter le narutomaki",
+                    "11":"Ajouter le vert d’oignon",
+                    "12":"Recouvrir de bouillon très chaud",
+                    "13":"Parsemer d’huile de sésame",
+                    "14":"Itadakimasu !"
+    },
+    "Temps": {
+        "preparation":"10 min", 
+        "Cuisson":"5 heures", 
+        "total":"5 heures et 10 min"
+        
+},
+    "srcImg":"ramen"
+      },
+
+      "2":{
+        "id":"2",
+        "name" : "Burger Maison",
+        "description" : "Le burger est un plat américain populaire dans le monde entier, composé d'un pain rond coupé en deux, généralement grillé ou toasté, avec un steak haché cuit et garni de divers ingrédients tels que du fromage, de la laitue, des tomates, de l'oignon, des cornichons, de la sauce ketchup, de la moutarde et de la mayonnaise.",
+        "listeIngredients" : ["1 petit pain rond au sésame","100g haché de boeuf","0.25 oignon rouge","0.25 oignon blanc","1 tranches Cheddar(ou fromage à Burger)","0.25 belle tomate","25g Roquette","1 c. à café mayonnaise","0.25 filet d'huile", "sel", "poivre"],
+        "listeUstensiles" : ["bol","couteau","papier film","passoir","poêle"],
+       "etapes" : {"1":"Émincez finement l'oignon blanc. Placez la viande hachée dans un bol, mélangez-là avec l'oignon, salez, poivrez.",
+                    "2":"Faconnez des steacks de la taille des pains à burger, enrobez-les de papier film et placez-les au frais 30 minutes.",
+                    "3":"Pelez l’oignon rouge puis émincez-le. Rincez et essorez la roquette. Rincez la tomate puis coupez-la en rondelles.",
+                    "4":"Faites chauffer l’huile dans une poêle et faites cuire les steaks 3 à 4 min de chaque côté, selon votre goût. En fin de cuisson, salez, poivrez, disposez 1 tranche de cheddar sur chaque steak et laissez-la légèrement fondre.",
+                    "5":"Fendez les petits pains en 2 et toastez-les légèrement. Montez les burgers : tartinez chaque moitié de pain de sauce puis garnissez avec la viande, les rondelles de tomate, l’oignon ciselé et les feuilles de roquette. Refermez les burgers et servez aussitôt.",
+                    "6":"MIAMIAMIAM NOMNOMNOM MY BIG BURGER"
+                    
+    },
+    "Temps": {
+        "preparation":"15 min", 
+        "Cuisson":"10 min", 
+        "total" :"25 min"
+},
+    "srcImg":"burger"
+      },
+
+      "3":{
+        "id":"3",
+        "name" : "Brochettes de boeuf de Fatima",
+        "description" : "Une brochette, en cuisine, désigne une fine tige sur laquelle sont enfilés des morceaux de viande destinés à être cuits à la broche, c’est-à-dire au-dessus des braises du feu ou au barbecue. Simple et rapide à réaliser, la brochette a l’immense avantage de pouvoir se préparer à l’avance. Pratique quand on sait qu’on va recevoir des amis ! Brochettes de poulet marinées au citron, brochettes de bœuf marinées à l’ail et au romarin, brochettes de veau calabraise, brochettes d’agneau aux herbes… Les idées ne manquent pas pour vous régaler lors de votre prochain barbecue. Cette recette est celle spéciale Fatima.",
+        "listeIngredients" : ["2 c à s d'huile d'olive","1 c. à s de harissa","2 c de cumin","sel","600g de boeuf dans la bavette","2 gousses d'ail hachées finement"],
+        "listeUstensiles" : ["saladier","couteau","cuillère en bois","1 plancha"],
+       "etapes" : {"1":"Fatima originaire du Maroc, tenait un petit restaurant à Saint Laurent du Maroni et nous servait ces délicieuses brochettes avant le couscous.",
+                    "2":"Dans un saladier, préparer la marinade avec tous les ingrédients, sauf la viande.",
+                    "3":"Couper la viande en biais en fines lanières d'environ 0.5 cm d'épaisseur puis en petits morceaux de 4 à 5 cm, surtout pas en cubes épais.",
+                    "4":"Mettre la viande dans la marinade et bien la mélanger, la laisser au moins 1 heure.",
+                    "5":"Enfiler sur des brochettes et faire cuire au BBQ ou à la plancha ou au gril durant environ 5 minutes.",
+                    "6":"Accompagner de couscous ou de ratatouille",
+                    "7":"shahiat tayiba"
+       },           
+    "Temps": {
+        "preparation":"15 min", 
+        "Cuisson":"5 min", 
+        "total" :"20 min"
+},
+    "srcImg":"brochette"
+      },
+
+      "4":{
+        "id":"4",
+        "name" : "Samoussas au boeuf",
+        "description" : "Beignet croustillant, de forme triangulaire, fait d'une fine pâte de farine de blé enrobant une farce à base de légumes, de viande, de poisson ou de fromage.",
+        "listeIngredients" : ["1 carotte","1 oignon","2 c à c de curry","1 c à c de gingembre en poudre","huile d'olive","huile de friture","5 feuilles de brick","200g de boeuf haché","1 gousse d'ail","5 c à s de sauce soja (sucré de préférence)","1 jaune d'oeuf"],
+        "listeUstensiles" : ["3 poêle","1 pinceau","1 cuillère en bois","1 dénoyauteur"],
+       "etapes" : {"1":"Dans une poêle à feu vif, faire revenir l'oignon, l'ail et la carotte hachés dans de l'huile d'olive.",
+                    "2":"Ajouter la viande de bœuf et laisser dorer un peu.",
+                    "3":"Assaisonner avec le curry, le gingembre puis ajouter la sauce soja. Bien mélanger et laisser cuire à feu doux 2 à 3 min.",
+                    "4":"Répartir la farce dans les feuilles de brick (2 samoussas par feuille) et procéder au pliage (souvent expliqué sur les paquets de feuilles de brick). ",
+                    "5":"Coller le dernier revers avec un jaune d'œuf.",
+                    "6":"Faire cuire dans un fond d'huile de friture, 2 min de chaque côté.",
+                    "7":"En fin de cuisson, déposer les samoussas sur une assiette avec du papier absorbant afin de retirer l'excès d'huile de cuisson. Bon appétit !"
+      },       
+    "Temps": {
+        "preparation":"15 min", 
+        "Cuisson":"15 min", 
+        "total" :"30 min"
+},
+    "srcImg":"samoussa"
+      }
+    
+      
+  }

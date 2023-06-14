@@ -1,0 +1,103 @@
+body {
+    background-image: url("../assets/backgrounds/homeBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+#logoContainer {
+    background-color: #5D97D1;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+#logoImg {
+    width: 40px;
+}
+
+#homeTitle {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5em;
+    color: black;
+    padding-left: 30px;
+}
+
+#subTitleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#subTitle {
+    font-size: 1.6em;
+    text-align: center;
+    width: 500px;
+}
+
+#stepsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+#bandeauImg {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+}
+
+.stepImg {
+    z-index: 2;
+    position: relative;
+}
+
+.stepImg {
+    transition: transform .5s ease;
+}
+
+.stepImg:hover {
+    transform: scale(1.05);
+}
+
+#btnContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#btnGo {
+    font-size: 1.6em;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #5D97D1;
+    border-radius: 6px;
+    border: none;
+    padding: 15px;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#btnGo a {
+    color:white;
+}
+
+#btnGo a:visited {
+    color:white;
+}
+
+#btnGo:hover{
+    background-color: #3e73a8;
+}

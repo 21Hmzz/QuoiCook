@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Recipe</title>
+  <link rel="stylesheet" href="../css/recipeStyle.css">
+  <link rel="stylesheet" href="../css/generalStyle.css">
+  <script src="../assets/js/app.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="containerPage">
+    <div class="logoTitle"><a href="homeView.html">QuoiCookBae</a></div>
+    <div class="containerViewRecipe">
+      <div class="recipeSteps">
+        <div class="titleStepSigns">
+          <span id="etat"></span>
+          <div id="demos"></div>
+          <br>
+          <div> <img src="../assets/images/like.png" alt="Ok sign" width="50px" height="50px"
+              style="padding: 10px; margin-left: 40px;"></div>
+          <div> <img src="../assets/images/banned.png" alt="Stop Sign" width="50px" height="50px"
+              style="padding: 10px;"> </div>
+          <div>
+            <div id="subTitleStep" class="subTitleStep">
+              <div> Commande vocales</div>
+              <div>"Suivant" ou "Précédent"</div>
+            </div>
+          </div>
+
+        </div>
+        <div id="retour">
+          <div id="retourText">
+
+          </div>
+          <ul id="loadingVoice">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div id="titleStep" class="titleStep">Etape 0</div>
+
+        <div id="step">
+          Les indications de la recette s'afficheront ici !
+        </div>
+        <div class="loading">
+          <div class="loadingText">
+            <p>Chargement de la recette en cours</p>
+          </div>
+          <div class="loadingBar">
+            <div class="bar"></div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div>
+        <div class="parameterBtns">
+          <p> Cliquez pour activer ou désactiver </p>
+          <button class="btnParameters" id="micon"> <i class="bx bx-microphone bx-sm"> </i>
+          </button>
+          <button class="btnParameters" id="micoff"> <i class="bx bx-microphone-off bx-sm"> </i> </button>
+          <!-- <span class="material-symbols-rounded">
+            <button id="webcamButton" class="mdc-button mdc-button--raised">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__label"><i class="bx bx-camera bx-md" style="font-size: 24px" id="camon"></i><i
+                  class="bx bx-camera-off bx-md" id="camoff"></i></span>
+            </button>
+          </span> -->
+          <button class="btnParameters" id="camon"> <i class="bx bx-camera bx-sm"> </i>
+          </button>
+          <button class="btnParameters" id="camoff"> <i class="bx bx-camera-off bx-sm"> </i> </button>
+
+
+
+        </div>
+
+
+        <div class="videoSpace">
+          <i class='bx bxs-video-off bx-lg' id="nocam"></i>
+          <div id="liveView" class="videoView">
+            <span id="etat"></span>
+            <div id="demos"></div>
+
+            <div id="webcamviewer" class="webcamviewer" style="position: relative;">
+              <video id="webcam" width="500" height="300" autoplay style="transform: scaleX(-1)"></video>
+              <canvas class="output_canvas" id="output_canvas"
+                style="position: absolute; right: 0; bottom: 0;"></canvas>
+              <p id="gesture_output" class="output"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+</body>
+
+</html>

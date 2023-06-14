@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600;700&display=swap');
+
+.logoTitle{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    position: absolute;top: 40px; left: 40px;
+    color:black;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+body {
+    background-image: url("../assets/backgrounds/background-gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Inter Tight', sans-serif;
+}
